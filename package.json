@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss ./src/tailwind.css -o ./public/css/main.css"
+    "build:css": "postcss ./src/tailwind.css -o ./public/css/main.css",
+    "build": "NODE_ENV=production postcss ./src/tailwind.css -o ./public/css/main.css"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,8 @@
   "dependencies": {
     "@tailwindcss/jit": "^0.1.10",
     "autoprefixer": "^10.4.15",
-    "tailwindcss-cli": "^0.1.2"
+    "tailwindcss-cli": "^0.1.2",
+    "win-node-env": "^0.6.1"
   },
   "devDependencies": {
     "postcss-cli": "^10.1.0",

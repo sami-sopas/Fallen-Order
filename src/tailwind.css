@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* DESPUES DE ESCRIBIR AQUI UN ESTILO, ESCRIBIR EN LA CONSOLA
+    npm run buid:css PARA QUE SE APLIQUEN LOS ESTILOS*/
+
+/* aplicando estilos a una clase personalizada*/
+.link{
+    @apply text-white block p-5 font-bold hover:text-yellow-400
+}

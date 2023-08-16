@@ -30862,6 +30862,24 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* DESPUES DE ESCRIBIR AQUI UN ESTILO, ESCRIBIR EN LA CONSOLA
+    npm run buid:css PARA QUE SE APLIQUEN LOS ESTILOS*/
+
+/* aplicando estilos a una clase personalizada*/
+
+.link{
+  display: block;
+  padding: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
+.link:hover {
+  --tw-text-opacity: 1;
+  color: rgba(251, 191, 36, var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
