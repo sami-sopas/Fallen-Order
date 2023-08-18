@@ -6,8 +6,13 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: theme => ({
-                'pattern': 'url(../img/pattern.jpg)'
-            })
+                'pattern': 'url(../img/pattern.jpg)',
+                'space-pattern': 'url(../img/space-pattern.jpg)',
+                'sister': 'url(../img/sister.png)'
+            }),
+            screens:{
+                'xsm': '320px'
+            }
         }
     },
     variants : {
