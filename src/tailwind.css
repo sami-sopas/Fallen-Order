@@ -7,5 +7,5 @@
 
 /* aplicando estilos a una clase personalizada*/
 .link{
-    @apply text-white block p-5 font-bold hover:text-yellow-400
+    @apply text-white block p-5 font-bold hover:text-yellow-400 transition duration-300
 }

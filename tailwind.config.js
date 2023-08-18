@@ -4,7 +4,11 @@ module.exports = {
     ],
     darkMode : false, //or 'media' or 'class'
     theme: {
-        extend: {}
+        extend: {
+            backgroundImage: theme => ({
+                'pattern': 'url(../img/pattern.jpg)'
+            })
+        }
     },
     variants : {
         extend: {},

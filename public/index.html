@@ -13,15 +13,64 @@
                 <img src="img/logo.png" class="w-10" alt="">
             </div>
             <div class="links flex-grow text-center"> <!-- cuando el tamaño sea md, ahora si mostramos los elementos, si no, se esconden-->
-                <ul class="hidden md:flex justify-center gap-10">
+                <ul class="hidden lg:flex justify-center gap-10">
                     <li><a href="#" class="link">Home</a></li>
                     <li><a href="#" class="link">About</a></li>
                     <li><a href="#" class="link">Fallen Order</a></li>
                     <li><a href="#" class="link">Survivor</a></li>
-                    <li><a href="#" class="link">Buy Now</a></li>
+                    <li><a href="#" class="inline-block rounded-full bg-yellow-500 bg-opacity-70 text-white px-5 py-2 mt-3 font-bold hover:bg-white hover:text-yellow-500 transition duration-500">Buy Now</a></li> 
+                </ul>
+            </div>
+
+            <!-- MENU QUE SE MUESTRA EN PANTALLAS MAS PEQUEÑAS -->
+            <div class="block lg:hidden w-1/6 lg:w-4/6"> 
+                <a href="#" class="link" id="mobile-menu">Menu</a>
+                <ul class="mobile-links hidden w-full absolute z-50 left-0 text-center bg-gray-800">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">About</a></li>
+                    <li><a href="#" class="link">Fallen Order</a></li>
+                    <li><a href="#" class="link">Survivor</a></li>
+                    <li><a href="#" class=" my-4 inline-block rounded-full bg-yellow-500 bg-opacity-70 text-white px-5 py-2 mt-3 font-bold hover:bg-white hover:text-yellow-500 transition duration-500">Buy Now</a></li> 
                 </ul>
             </div>
         </nav>
+
+        <section class="header">
+            <img src="img/cover.jpg" alt="Fallen Order">
+        </section>
+
+        <section>
+            <!--- utilizando imagen como background image:
+                1. Ir a tailwind.config.js y arreglar una nueva 'regla' class
+                2. Ejecutar npm run build:css 
+                3. ir a tailwind.css, buscar esa regla y ajustarla -->
+            <div class="bg-pattern h-14 bg-repeat-x relative bg-contain -top-1"></div>
+            
+            <!--- cuando sea md o mas, que se muestre como row, cuando sea mayor, sea con columna-->
+            <div class="text-center p-4 flex md:flex-row flex-col gap-3 justify-center text-white">
+                <a href="#" class="inline-block py-3 px-16 bg-yellow-500 bg-opacity-70 font-bold border-transparent border-8 text-2xl rounded-3xl hover:bg-white hover:text-yellow-500 transition duration-500 mt-5 mb-5 mr-3">Buy Now</a>
+                <a href="#" class="inline-block py-3 px-16 bg-black font-bold border-transparent border-8 border-white text-2xl rounded-3xl hover:bg-white hover:text-black transition duration-500 mt-5 mb-5 ml-3">Watch Trailer</a>
+            </div>
+
+            <div class="bg-pattern h-14 bg-repeat-x relative bg-contain top-2"></div>
+        </section>
     </div>
+
+    <script>
+
+        //Codigo para hacer el menu tipo hamburguesa...
+
+        //Sacar referencia del boton 
+        const menuButton = document.querySelector('#mobile-menu');
+
+        //Le añadimos un evento al hacer click
+        menuButton.addEventListener('click',e => {
+            //Cuando se haga click, haremos referencia a mobile-links
+            const menu = document.querySelector('.mobile-links');
+
+            //intercambiamos el estilo de hidden
+            menu.classList.toggle('hidden');
+        })
+    </script>
 </body>
 </html>
