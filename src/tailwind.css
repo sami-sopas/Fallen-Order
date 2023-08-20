@@ -9,3 +9,12 @@
 .link{
     @apply text-white block p-5 font-bold hover:text-yellow-400 transition duration-300
 }
+
+
+.boton{
+    @apply xl:text-2xl my-4 inline-block py-2 px-16 bg-blue-500 text-white font-black border-transparent border-8 rounded-3xl hover:border-blue-500 hover:bg-white hover:text-black transition duration-300;
+}
+
+.arrow{
+    @apply w-4 h-4 inline-block border-yellow-300 border-solid border-t-4 border-r-4 transition-all transform rotate-45 hover:border-blue-500;
+}
