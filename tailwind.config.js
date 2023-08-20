@@ -1,6 +1,6 @@
 module.exports = {
     purge: [
-        '*.html', //aplica el procesamiento post css
+        './public/**/*.html', //aplica el procesamiento post css
     ],
     darkMode: false, //or 'media' or 'class'
     theme: {
