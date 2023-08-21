@@ -9,6 +9,9 @@ page to practice tailwind.
 
 Definitely, this is harder than bootstrap...
 
-Anyways! 
+Anyways! You can visit the page [here](https://sami-sopas.github.io/Fallen-Order/)
+
+![My Image](page.png)
+
 
 
